@@ -59,4 +59,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ sedanforth/external:v1.0 }}:v2.1.${{ github.run_number }}
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:v1.0.${{ github.run_number }}
